@@ -6,6 +6,7 @@ export default class Articles extends React.Component {
         results: [],
         numberOfResults: '',
         resultsLoading: true,
+        articlesOnList: []
     };
 
     queryValueEntryChange = (e) => {
@@ -37,11 +38,20 @@ export default class Articles extends React.Component {
                         <p className='article-abstract'>{document.abstract}</p>
                         <a className='article-link' href={document.web_url} target="_blank" rel="noopener noreferrer">Read the full article</a>
                         <br/>
-                        <button className='article-add-button' id={`addBtn${this.state.queryValue}${index}`}>Add to List</button>
+                        <button className='article-add-button' id={`addBtn${this.state.queryValue}${index}`} onClick={this.addArticleToList(index)}>Add to List</button>
                     </div>
                 )}
             </div>
         </div>
+    }
+
+    addArticleToList = (index) => {
+        return (e) => {
+            const newArticlesOnList = [...this.state.articlesOnList, this.state.results.response.docs[index]]
+            this.setState({
+                articlesOnList: newArticlesOnList
+            })
+        }
     }
 
     render() {

@@ -8,7 +8,8 @@ export default class BestSellerSearch extends React.Component {
         queryGenre: '',
         results: [],
         resultsLoading: true,
-        errorMessage: ''
+        errorMessage: '',
+        booksOnList: []
     };
 
     componentDidMount() {
@@ -93,12 +94,20 @@ export default class BestSellerSearch extends React.Component {
                         <p className='book-description'>{book.description}</p>
                         <a className='book-amazon-link' href={book.amazon_product_url} target="_blank" rel="noopener noreferrer">Buy the book on Amazon</a>
                         <br/>
-                        <button className='book-add-button' id={`addBtn${this.state.queryGenre}${index}`}>Add to List</button>
+                        <button className='book-add-button' id={`addBtn${this.state.queryGenre}${index}`} onClick={this.addBookToList(index)}>Add to List</button>
                     </div>
                 )}
             </div>
         </div>
+    }
 
+    addBookToList = (index) => {
+        return (e) => {
+            const newBooksOnList = [...this.state.booksOnList, this.state.results.results.books[index]]
+            this.setState({
+                booksOnList: newBooksOnList
+            })
+        }
     }
     
     render(){

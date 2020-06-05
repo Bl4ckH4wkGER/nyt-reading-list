@@ -4,7 +4,7 @@ export default class ReadingList extends React.Component {
 
     render(){
         return(
-            <p>Reading List.</p>
+            <h1 className='page-heading'>List</h1>
         )
     }
 }

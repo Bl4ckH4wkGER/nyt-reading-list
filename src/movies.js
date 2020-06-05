@@ -5,7 +5,8 @@ export default class Movies extends React.Component {
         queryValue: '',
         results: [],
         numberOfResults: '',
-        resultsLoading: true
+        resultsLoading: true,
+        moviesOnList: []
     };
 
     queryValueEntryChange = (e) => {
@@ -37,11 +38,20 @@ export default class Movies extends React.Component {
                         <p className='movie-summary'>{movie.summary_short}</p>
                         <a className='movie-review-link' href={movie.link.url} target="_blank" rel="noopener noreferrer">Read the full review</a>
                         <br/>
-                        <button className='movie-add-button' id={`addBtn${this.state.queryValue}${index}`}>Add to List</button>
+                        <button className='movie-add-button' id={`addBtn${this.state.queryValue}${index}`} onClick={this.addMovieToList(index)}>Add to List</button>
                     </div>
                 )}
             </div>
         </div>
+    }
+
+    addMovieToList = (index) => {
+        return (e) => {
+            const newMoviesOnList = [...this.state.moviesOnList, this.state.results.results[index]]
+            this.setState({
+                moviesOnList: newMoviesOnList
+            })
+        }
     }
 
     render() {
