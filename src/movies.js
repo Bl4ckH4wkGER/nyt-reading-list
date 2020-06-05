@@ -1,4 +1,5 @@
 import React from 'react';
+import ls from 'local-storage';
 
 export default class Movies extends React.Component {
     state = {
