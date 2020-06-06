@@ -98,6 +98,6 @@
   width: 75%;
 }
 
-.book-add-button, .article-add-button, .movie-add-button {
+.book-add-button, .article-add-button, .movie-add-button, .book-remove-button, .article-remove-button, .movie-remove-button {
   margin: 10px;
 }

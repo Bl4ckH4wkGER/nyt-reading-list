@@ -1,6 +1,5 @@
 import React from 'react';
 import ls from 'local-storage';
-
 export default class Movies extends React.Component {
     state = {
         queryValue: '',
@@ -9,6 +8,12 @@ export default class Movies extends React.Component {
         resultsLoading: true,
         moviesOnList: []
     };
+
+    componentDidMount() {
+        this.setState({
+            moviesOnList: ls.get('moviesOnList') || [],
+        })
+    }
 
     queryValueEntryChange = (e) => {
         this.setState({ queryValue: e.target.value });
@@ -48,10 +53,11 @@ export default class Movies extends React.Component {
 
     addMovieToList = (index) => {
         return (e) => {
-            const newMoviesOnList = [...this.state.moviesOnList, this.state.results.results[index]]
+            const newMoviesOnList = [...this.state.moviesOnList, this.state.results.results[index]];
             this.setState({
                 moviesOnList: newMoviesOnList
-            })
+            });
+            ls.set('moviesOnList', newMoviesOnList);
         }
     }
 

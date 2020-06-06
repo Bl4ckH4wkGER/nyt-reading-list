@@ -1,6 +1,5 @@
 import React from 'react';
 import ls from 'local-storage';
-
 export default class Articles extends React.Component {
     state = {
         queryValue: '',
@@ -9,6 +8,12 @@ export default class Articles extends React.Component {
         resultsLoading: true,
         articlesOnList: []
     };
+
+    componentDidMount() {
+        this.setState({
+            articlesOnList: ls.get('articlesOnList') || [],
+        })
+    }
 
     queryValueEntryChange = (e) => {
         this.setState({ queryValue: e.target.value });
@@ -48,10 +53,11 @@ export default class Articles extends React.Component {
 
     addArticleToList = (index) => {
         return (e) => {
-            const newArticlesOnList = [...this.state.articlesOnList, this.state.results.response.docs[index]]
+            const newArticlesOnList = [...this.state.articlesOnList, this.state.results.response.docs[index]];
             this.setState({
                 articlesOnList: newArticlesOnList
-            })
+            });
+            ls.set('articlesOnList', newArticlesOnList);
         }
     }
 

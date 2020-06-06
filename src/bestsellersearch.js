@@ -1,6 +1,5 @@
 import React from 'react';
-import ls from 'local-storage';
-
+import ls from 'local-storage'
 export default class BestSellerSearch extends React.Component {
     state = {
         genres: [],
@@ -18,7 +17,8 @@ export default class BestSellerSearch extends React.Component {
         .then(res => res.json())
         .then(data => this.setState({
           genres: data,
-          genresLoading: false
+          genresLoading: false,
+          booksOnList: ls.get('booksOnList') || [],
         }));
     }
 
@@ -104,10 +104,11 @@ export default class BestSellerSearch extends React.Component {
 
     addBookToList = (index) => {
         return (e) => {
-            const newBooksOnList = [...this.state.booksOnList, this.state.results.results.books[index]]
+            const newBooksOnList = [...this.state.booksOnList, this.state.results.results.books[index]];
             this.setState({
                 booksOnList: newBooksOnList
-            })
+            });
+            ls.set('booksOnList', newBooksOnList);
         }
     }
     
