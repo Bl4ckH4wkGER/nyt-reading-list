@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/nyt-reading-list/static/css/main.3c35fdac.chunk.css",
-    "main.js": "/nyt-reading-list/static/js/main.3ed66d1c.chunk.js",
-    "main.js.map": "/nyt-reading-list/static/js/main.3ed66d1c.chunk.js.map",
+    "main.css": "/nyt-reading-list/static/css/main.a33762d3.chunk.css",
+    "main.js": "/nyt-reading-list/static/js/main.d8bacff0.chunk.js",
+    "main.js.map": "/nyt-reading-list/static/js/main.d8bacff0.chunk.js.map",
     "runtime-main.js": "/nyt-reading-list/static/js/runtime-main.f4733277.js",
     "runtime-main.js.map": "/nyt-reading-list/static/js/runtime-main.f4733277.js.map",
-    "static/js/2.0977fd65.chunk.js": "/nyt-reading-list/static/js/2.0977fd65.chunk.js",
-    "static/js/2.0977fd65.chunk.js.map": "/nyt-reading-list/static/js/2.0977fd65.chunk.js.map",
+    "static/js/2.045d1b57.chunk.js": "/nyt-reading-list/static/js/2.045d1b57.chunk.js",
+    "static/js/2.045d1b57.chunk.js.map": "/nyt-reading-list/static/js/2.045d1b57.chunk.js.map",
     "index.html": "/nyt-reading-list/index.html",
-    "precache-manifest.2271bb4871705426a26c7e69817cdd89.js": "/nyt-reading-list/precache-manifest.2271bb4871705426a26c7e69817cdd89.js",
+    "precache-manifest.490121bbab862d821af414555a811a85.js": "/nyt-reading-list/precache-manifest.490121bbab862d821af414555a811a85.js",
     "service-worker.js": "/nyt-reading-list/service-worker.js",
-    "static/css/main.3c35fdac.chunk.css.map": "/nyt-reading-list/static/css/main.3c35fdac.chunk.css.map",
-    "static/js/2.0977fd65.chunk.js.LICENSE.txt": "/nyt-reading-list/static/js/2.0977fd65.chunk.js.LICENSE.txt",
+    "static/css/main.a33762d3.chunk.css.map": "/nyt-reading-list/static/css/main.a33762d3.chunk.css.map",
+    "static/js/2.045d1b57.chunk.js.LICENSE.txt": "/nyt-reading-list/static/js/2.045d1b57.chunk.js.LICENSE.txt",
     "static/media/book.svg": "/nyt-reading-list/static/media/book.ffdb5b1a.svg",
     "static/media/empire-state.svg": "/nyt-reading-list/static/media/empire-state.3aecda0c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f4733277.js",
-    "static/js/2.0977fd65.chunk.js",
-    "static/css/main.3c35fdac.chunk.css",
-    "static/js/main.3ed66d1c.chunk.js"
+    "static/js/2.045d1b57.chunk.js",
+    "static/css/main.a33762d3.chunk.css",
+    "static/js/main.d8bacff0.chunk.js"
   ]
 }
