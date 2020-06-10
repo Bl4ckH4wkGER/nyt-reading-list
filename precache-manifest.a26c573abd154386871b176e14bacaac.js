@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67eb9bdfbd7a698d56ee1473ed611586",
+    "revision": "6bea2576eb08d468c0d65aecdc0a1873",
     "url": "/nyt-reading-list/index.html"
   },
   {
-    "revision": "a401b19d11d2ff221d66",
-    "url": "/nyt-reading-list/static/css/main.a33762d3.chunk.css"
+    "revision": "bebf62a1d15001b73a06",
+    "url": "/nyt-reading-list/static/css/main.4945a668.chunk.css"
   },
   {
-    "revision": "48d0c58793e400358370",
-    "url": "/nyt-reading-list/static/js/2.045d1b57.chunk.js"
+    "revision": "0b54fc9fac92e24d90a6",
+    "url": "/nyt-reading-list/static/js/2.d50209d1.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/nyt-reading-list/static/js/2.045d1b57.chunk.js.LICENSE.txt"
+    "url": "/nyt-reading-list/static/js/2.d50209d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a401b19d11d2ff221d66",
-    "url": "/nyt-reading-list/static/js/main.46fd40c2.chunk.js"
+    "revision": "bebf62a1d15001b73a06",
+    "url": "/nyt-reading-list/static/js/main.df7690ed.chunk.js"
   },
   {
     "revision": "d4c55352ce5d5dc7445a",
