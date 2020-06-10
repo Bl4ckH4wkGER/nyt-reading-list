@@ -14,6 +14,9 @@ export default class Home extends React.Component {
                 <img id='book-logo' src={book} alt='book'/>
                 <p>Happy searching!</p>
             </div>
+            <div className='list-area'>
+                <p>Code version 1.0 as of 6/9/2020</p>
+            </div>
             </>
         )
     }
