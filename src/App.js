@@ -4,6 +4,7 @@ import Home from './home';
 import BestSellerSearch from './bestsellersearch';
 import Articles from './articles';
 import Movies from './movies';
+import PrintList from './printlist';
 import empire from './empire-state.svg';
 import './App.css';
 
@@ -26,6 +27,9 @@ function App() {
           <button className='header-button'>
             <Link className='header-link' to="/movie-search/">Movies</Link>
           </button>
+          <button className='header-button'>
+            <Link className='header-link' to="/print-list/">Print</Link>
+          </button>
         </div>
         <div className='app-content'>
           <>
@@ -33,6 +37,7 @@ function App() {
             <Route exact path="/bestseller-search" component={BestSellerSearch} />
             <Route exact path="/article-search" component={Articles} />
             <Route exact path="/movie-search" component={Movies} />
+            <Route exact path="/print-list" component={PrintList}/>
           </>
         </div>
       </Router>

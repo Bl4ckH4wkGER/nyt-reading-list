@@ -30,7 +30,7 @@
 }
 
 .header-button{
-  margin-left: 3vw;
+  margin-left:  5vw;
   background-color: #2C4251;
   border: 2px solid #FFFC31;
   text-align: center;
@@ -100,4 +100,9 @@
 
 .book-add-button, .article-add-button, .movie-add-button, .book-remove-button, .article-remove-button, .movie-remove-button {
   margin: 10px;
+}
+
+.print-view {
+  background-color: #FFFFFF;
+  text-align: left;
 }
