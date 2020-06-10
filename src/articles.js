@@ -61,9 +61,20 @@ export default class Articles extends React.Component {
         }
     }
 
+    removeArticleFromList = (index) => {
+        return (e) => {
+          const newArticlesOnList = this.state.articlesOnList.filter((item, j) => index !== j);
+          this.setState({
+            articlesOnList: newArticlesOnList,
+          });
+          ls.set('articlesOnList', newArticlesOnList);
+        }
+    }
+
     render() {
         return(
-            <div>
+            <>
+            <div className='search-area'>
                 <h1 className='page-heading'>Articles</h1>
                 <h2>Add a keyword below:</h2>
                 <form onSubmit={this.searchQuery}>
@@ -82,6 +93,20 @@ export default class Articles extends React.Component {
                 </form>
                 <div>{this.searchResults()}</div>
             </div>
+            <div className='list-area'>
+                <h1 className='page-heading'>Article-List</h1>
+                <ul>
+                    {this.state.articlesOnList.map((article, index) => 
+                        <li key={index}>
+                            {article.headline.main} - {article.byline.original}
+                            <br/>
+                            <button className='article-remove-button' onClick={this.removeArticleFromList(index)}>Remove</button>
+                        </li>
+                        
+                    )}
+                </ul>
+            </div>
+            </>
         )
     }
 }

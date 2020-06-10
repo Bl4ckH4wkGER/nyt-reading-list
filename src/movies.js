@@ -61,9 +61,20 @@ export default class Movies extends React.Component {
         }
     }
 
+    removeMovieFromList = (index) => {
+        return (e) => {
+          const newMoviesOnList = this.state.moviesOnList.filter((item, j) => index !== j);
+          this.setState({
+            moviesOnList: newMoviesOnList,
+          });
+          ls.set('moviesOnList', newMoviesOnList);
+        }
+    }
+
     render() {
         return(
-            <div>
+            <>
+            <div className='search-area'>
                 <h1 className='page-heading'>Movies</h1>
                 <h2>Add a keyword below:</h2>
                 <form onSubmit={this.searchQuery}>
@@ -82,6 +93,19 @@ export default class Movies extends React.Component {
                 </form>
                 <div>{this.searchResults()}</div>
             </div>
+            <div className='list-area'>
+                <h1 className='page-heading'>Movie-List</h1>
+                <ul>
+                    {this.state.moviesOnList.map((movie, index) => 
+                        <li key={index}>
+                            {movie.display_title}
+                            <br/>
+                            <button className='movie-remove-button' onClick={this.removeMovieFromList(index)}>Remove</button>
+                        </li>
+                    )}
+                </ul>
+            </div>
+            </>
         )
     }
 }

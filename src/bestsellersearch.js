@@ -1,5 +1,5 @@
 import React from 'react';
-import ls from 'local-storage'
+import ls from 'local-storage';
 export default class BestSellerSearch extends React.Component {
     state = {
         genres: [],
@@ -111,15 +111,39 @@ export default class BestSellerSearch extends React.Component {
             ls.set('booksOnList', newBooksOnList);
         }
     }
+
+    removeBookFromList = (index) => {
+        return (e) => {
+          const newBooksOnList = this.state.booksOnList.filter((item, j) => index !== j);
+          this.setState({
+            booksOnList: newBooksOnList,
+          });
+          ls.set('booksOnList', newBooksOnList);
+        }
+    }
     
     render(){
         return(
-            <div>
+            <>
+            <div className='search-area'>
                 <h1 className='page-heading'>Bestsellers</h1>
                 <div>{this.searchForm()}</div>
                 <div className='queryErrorMessage'>{this.state.errorMessage}</div>
                 <div>{this.searchResults()}</div>
             </div>
+            <div className='list-area'>
+                <h1 className='page-heading'>Book-List</h1>
+                <ul>
+                    {this.state.booksOnList.map((book, index) => 
+                        <li key={index}>
+                            {book.title} by {book.author}
+                            <br/>
+                            <button className='book-remove-button' onClick={this.removeBookFromList(index)}>Remove</button>
+                        </li>
+                    )}
+                </ul>
+            </div>
+            </>
         )
     }
 }

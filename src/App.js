@@ -4,7 +4,6 @@ import Home from './home';
 import BestSellerSearch from './bestsellersearch';
 import Articles from './articles';
 import Movies from './movies';
-import ReadingList from './readinglist';
 import empire from './empire-state.svg';
 import './App.css';
 
@@ -29,15 +28,12 @@ function App() {
           </button>
         </div>
         <div className='app-content'>
-          <div className='search-area'>
+          <>
             <Route exact path="/" component={Home} />
             <Route exact path="/bestseller-search" component={BestSellerSearch} />
             <Route exact path="/article-search" component={Articles} />
             <Route exact path="/movie-search" component={Movies} />
-          </div>
-          <div className='list-area'>
-            <ReadingList/>
-          </div>
+          </>
         </div>
       </Router>
     </div>
