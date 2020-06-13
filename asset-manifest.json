@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nyt-reading-list/static/css/main.4945a668.chunk.css",
-    "main.js": "/nyt-reading-list/static/js/main.df7690ed.chunk.js",
-    "main.js.map": "/nyt-reading-list/static/js/main.df7690ed.chunk.js.map",
+    "main.css": "/nyt-reading-list/static/css/main.b5c145f5.chunk.css",
+    "main.js": "/nyt-reading-list/static/js/main.c2b1d115.chunk.js",
+    "main.js.map": "/nyt-reading-list/static/js/main.c2b1d115.chunk.js.map",
     "runtime-main.js": "/nyt-reading-list/static/js/runtime-main.f4733277.js",
     "runtime-main.js.map": "/nyt-reading-list/static/js/runtime-main.f4733277.js.map",
     "static/js/2.d50209d1.chunk.js": "/nyt-reading-list/static/js/2.d50209d1.chunk.js",
     "static/js/2.d50209d1.chunk.js.map": "/nyt-reading-list/static/js/2.d50209d1.chunk.js.map",
     "index.html": "/nyt-reading-list/index.html",
-    "precache-manifest.a26c573abd154386871b176e14bacaac.js": "/nyt-reading-list/precache-manifest.a26c573abd154386871b176e14bacaac.js",
+    "precache-manifest.e6d141e0aba9e64e941c97466e1ee347.js": "/nyt-reading-list/precache-manifest.e6d141e0aba9e64e941c97466e1ee347.js",
     "service-worker.js": "/nyt-reading-list/service-worker.js",
-    "static/css/main.4945a668.chunk.css.map": "/nyt-reading-list/static/css/main.4945a668.chunk.css.map",
+    "static/css/main.b5c145f5.chunk.css.map": "/nyt-reading-list/static/css/main.b5c145f5.chunk.css.map",
     "static/js/2.d50209d1.chunk.js.LICENSE.txt": "/nyt-reading-list/static/js/2.d50209d1.chunk.js.LICENSE.txt",
     "static/media/book.svg": "/nyt-reading-list/static/media/book.ffdb5b1a.svg",
     "static/media/empire-state.svg": "/nyt-reading-list/static/media/empire-state.3aecda0c.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.f4733277.js",
     "static/js/2.d50209d1.chunk.js",
-    "static/css/main.4945a668.chunk.css",
-    "static/js/main.df7690ed.chunk.js"
+    "static/css/main.b5c145f5.chunk.css",
+    "static/js/main.c2b1d115.chunk.js"
   ]
 }
