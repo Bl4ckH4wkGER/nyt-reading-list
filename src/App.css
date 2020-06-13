@@ -46,7 +46,7 @@
 .app-content{
   width: 100vw;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 75vw 25vw;
   grid-template-rows: minmax(90vh, auto);
   background-color: #B5B5B5;
 }

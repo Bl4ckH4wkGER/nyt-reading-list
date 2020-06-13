@@ -15,7 +15,7 @@ export default class Home extends React.Component {
                 <p>Happy searching!</p>
             </div>
             <div className='list-area'>
-                <p>Code version 1.0 as of 6/9/2020</p>
+                <p>Code version 1.1 as of 6/13/2020</p>
             </div>
             </>
         )
